@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Honda Bike</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.ct-socials {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    list-style: none;
+    padding-left: 0;
+    z-index: 10;
+    margin: 0;
+    -webkit-transition: left 0.25s ease-in-out;
+    transition: left 0.25s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.ct-socials li {
+    padding: 0px 0;
+}
+.ct-socials li a {
+   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    width: 44px;
+    height: 54px;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    float: right;
+    padding-left: 5px;
+}
+.ct-socials li a:hover {
+width: 54px;
+padding-left: 0;
+text-decoration: none;
+
+}
+
+    tr { background-color: #ffffff}
+    .normal { background-color: #ffffff }
+  .highlight {background: linear-gradient(180deg, #FFC371, #FF5F6D) }
+
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.imw{
+    width: 65%;
+    position: relative;
+}
+.product{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 9;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+  }
+  
+  .ccc:hover .overlay {
+    opacity: 0.7;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .cc1{
+    width: 82%;
+    background: #fff;
+    color: #000;
+    padding: 4px 8px;
+    border: 1px solid #000;
+    height: 40px;
+    border-radius: 7px;
+  }
+  @media only screen and (max-width: 553px) {
+    .card{
+        margin-top: 25px;
+    }
+  }
+  .card{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+  }
+  
+  .hover-zoomin a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-zoomin img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .hover-zoomin:hover img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+</style>
+</head>
+
+<body>
+<ul class="ct-socials">
+        <li style="background-color:red;font-size:25px;">
+           <a href="tel:7798902681" target="_blank"><i class="fa fa-phone"></i></a>
+       </li>
+        <li style="background-color:#1fa831;font-size:25px;">
+           <a href="https://api.whatsapp.com/send?phone=917798902681&text=Im Intrested To Your Product" target="_blank"><i class="fa fa-whatsapp"></i></a>
+        </li>
+        <li style="background-color:red;font-size:25px;">
+           <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-phone"></i></a>
+        </li>
+ </ul>
+<h1 style="text-align:center;color:red;text-shadow:2px 2px 5px black;font-size:45px;height:80px"><b><I>HONDA BIKE<I></b></h1>
+<!--navbar-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"><img src="data:image/png;base64,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" alt="Avatar Logo" style="width:80px; height:80px;" class="rounded">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="" style="margin-left:130px;font-size:25px;color:black;"><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" style="margin-left:130px;font-size:25px;color:black;"><b>ABOUT US</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="E:\Internship\ContactForm.html" style="margin-left:130px;font-size:25px;color:black;"><b>CONTACT US</b></a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="" style="margin-left:130px;font-size:25px;color:black;"><b>GALLERY</b></a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="" style="margin-left:130px;font-size:25px;color:black;"><b>FEEDBACK</b></a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<br>
+<!--navbar end-->
+	
+	<!-- Carousel -->
+	<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+	
+	<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.udaipurian.com/wp-content/uploads/2020/03/honda-showroom-in-udaipur-udaipurian.jpg" alt="Los Angeles" class="d-block" style="width:100%;height:500px;border:1px solid red">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.mahalaxmihonda.com/honda-two-wheeler-dealer/slider/mahalaxmi-honda-two-wheeler-dealer-01.jpg" alt="Chicago" class="d-block" style="width:100%;height:500px;border:1px solid red">
+    </div>
+    <div class="carousel-item">
+      <img src="https://content.jdmagicbox.com/comp/bokaro/i2/9999p6542.6542.190214125950.i7i2/catalogue/sandhya-honda-bokaro-motorcycle-dealers-honda-xsj40de9gw.jpg?clr=29333d" alt="New York" class="d-block" style="width:100%;height:500px;border:1px solid red">
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<br>
+<!-- Carousel end -->
+
+<!--about us-->
+<div class="container">
+<h1 style="text-align:center;color:red;text-shadow:2px 2px 5px black;"><b><I>ABOUT US</b></I></h1>
+<br>
+	<div class="row">
+	
+	<div class="col-sm-6">
+	<img src="https://www.shutterstock.com/image-photo/bordeaux-aquitaine-france-10-01-260nw-1826518094.jpg" style="width:90%; height:250px;border:1px solid red">
+	</div>
+	
+	<div class="col-sm-6" style="text-align:justify;">
+	<p><b>Honda Motorcycle and Scooter India, Private Limited is the wholly owned Indian subsidiary of Honda Motor Company, Limited, Japan. Founded in 1999, it was the fourth Honda automotive venture in India, after Kinetic Honda Motor Ltd, Hero Honda and Honda Siel Cars India.Honda Motorcycle & Scooter India Pvt. Ltd. (HMSI) is the wholly-owned subsidiary of Honda Motor Company, Japan – the World’s No.1 two-wheeler company. Commencing its Indian 2Wheeler operations in May 2001, Honda in the last two decades has grown to become India’s 2nd largest two-wheeler company with over 55 million happy customers.</b></p>
+	</div>
+	
+	</div>
+	</div>
+	<br>
+<!--about us end-->	
+	
+<!--gallery-->
+<div>
+<h1 style="text-align:center;color:red;text-shadow:2px 2px 5px black;"><b><I>GALLERY<I></b></h1>
+<br>
+ <div class="row">
+        <div class="col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="https://www.sachihonda.com/honda-two-wheeler-dealer/slider/honda-two-wheeler-dealer-02.jpg" style="width:90%; height:200px;border:1px solid red;" alt=""/>
+          </a>
+        </div>
+		
+		 <div class="col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="https://static.autox.com/uploads/2021/03/Hero-Xpulse-Honda-Activa-Suzuki-Gixxer-SF-Royal-Enfield-Meteor-TVS-NTorq-BajajPulsar-NS160.jpg" style="width:90%; height:200px;border:1px solid red;" alt=""/>
+          </a>
+        </div>
+		
+		<div class="col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="https://nikkoyhonda.com/wp-content/uploads/2020/09/honda-bikes-banner.png" style="width:90%; height:200px;border:1px solid red;" alt=""/>
+          </a>
+        </div>
+		
+		<div class="col-sm-3 hover-zoomin">
+          <a href="#" title="">
+            <img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=http://img.haymarketsac.in/autocarpro/a45970cc-9353-4d5b-a211-4acf2bdb1bdc.jpg" style="width:90%; height:200px;border:1px solid red;" alt=""/>
+          </a>
+        </div>
+	
+	</div>
+<br>
+<!--gallery end-->
+
+
+<!--product-->
+
+          <h1 class="heading" style="text-align:center;color:red;text-shadow:2px 2px 5px black;"><b><I>PRODUCT</b></I></h1>
+		  <br>
+                 <div class="container-fuild">
+                    <div class="row ">
+                        <div class="col-md-3 ">
+                          <div class="card">
+                            <div class="ccc">
+                              <p class="text-center"><img src="https://imgd.aeplcdn.com/1200x900/n/cw/ec/43482/sp-125-right-front-three-quarter-2.jpeg?isig=0" style="width:90%; height:200px;" class="imw"></p> 
+<!--                               <div class="overlay">
+                                <div class="text">View Details</div>
+                              </div> -->
+                            </div>
+                            <div class="card-body">
+                              <h5  class="text-center">SP 125</h5> 
+                              <p  class="text-center">Price: $83,094</p>
+                              <p class="text-center"><input type="submit" name="Save" value="Buy" class=" cc1"></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="card">
+                            <div class="ccc">
+                              <p class="text-center"><img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/114537/livo-right-side-view-2.png?isig=0" style="width:90%; height:200px;" class="imw"></p> 
+<!--                               <div class="overlay">
+                                <div class="text">View Details</div>
+                              </div> -->
+                            </div>
+                            <div class="card-body">
+                              <h5  class="text-center">Shine SP</h5> 
+                              <p  class="text-center">Price: $ 72,900</p>
+                              <p class="text-center"><input type="submit" name="Save" value="Buy" class=" cc1"></p>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="col-md-3">
+                            <div class="card">
+                            <div class="ccc">
+                              <p class="text-center"><img src="https://i.pinimg.com/originals/f8/0f/c9/f80fc9ecf76c330cd5c2c37f8e284336.jpg" style="width:90%; height:200px;" class="imw"></p> 
+<!--                               <div class="overlay">
+                                <div class="text">View Details</div>
+                              </div> -->
+                            </div>
+                            <div class="card-body">
+                              <h5  class="text-center">Motorcycle</h5> 
+                              <p  class="text-center">Price: $70,000</p>
+                              <p class="text-center"><input type="submit" name="Save" value="Buy" class=" cc1"></p>
+                            </div>
+                          </div>
+                        </div>
+					
+                      <div class="col-md-3">
+                         <div class="card">
+                          <div class="ccc">
+                            <p class="text-center"><img src="https://img.indianautosblog.com/resize/750x-/2018/09/05/yamaha-rx100-side-profile-press-image-82e3.jpg" style="width:90%; height:200px;" class="imw"></p> 
+<!--                             <div class="overlay">
+                              <div class="text">View Details</div>
+                            </div> -->
+                          </div>
+                          <div class="card-body">
+                            <h5  class="text-center">Yamaha</h5> 
+                            <p  class="text-center">Price: $79,456</p>
+                            <p class="text-center"><input type="submit" name="Save" value="Buy" class=" cc1"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+				
+                 </div>
+				<br>
+				<br>
+
+				
+<!--product end-->
+
+
+
+
+<!--footer-->
+<footer>
+<div class="container">
+<h1 style="text-align:center;color:red;text-shadow:2px 2px 5px black;"><b><I>CONTACT US<I></b></h1>
+<br>
+	<div class="row">
+	
+	<div class="col-sm-3">
+	<h1 style="text-align:center;color:red;">Honda Bike</h1>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/800px-Honda_Logo.svg.png" alt="Avatar Logo" style="width:80px; height:100px;" class="rounded">
+	<br>
+	<p style="text-align:justify;"><b>Honda Motorcycle and Scooter India, Private Limited is the wholly owned Indian subsidiary of Honda Motor Company, Limited, Japan. Founded in 1999, it was the fourth Honda automotive venture in India, after Kinetic Honda Motor Ltd, Hero Honda and Honda Siel Cars India.</b></p>
+	</div>
+	
+	<div class="col-sm-3">
+	<h1 style="text-align:center; color:red;">Page</h1>
+		<div style="margin:right; text-align:center;">
+				<ul><a href="" style="font-size:20px;color:black;">HOME</a></ul>
+				<ul><a href="" style="font-size:20px;color:black;">ABOUT US</a></ul>
+				<ul><a href="" style="font-size:20px;color:black;">CONTACT US</a></ul>
+				<ul><a href="" style="font-size:20px;color:black;">GALLERY</a></ul>
+				<ul><a href="" style="font-size:20px;color:black;">FEEDBACK</a></ul>
+		</div>
+	
+	</div>
+	
+	<div class="col-sm-3">
+	<h1 style="text-align:center;color:red;">Product</h1>
+		<div>
+		<ul style="text-align:center;list-style-type:none;">
+		<li style="font-size:20px;">SP 125</li>
+		<li style="font-size:20px;">Shine SP</li>
+		<li style="font-size:20px;">Motorcycle</li>
+		<li style="font-size:20px;">Yamaha</li>
+		</div>
+	</div>
+	
+	<div class="col-sm-3">
+	<h1 style="text-align:center;color:red;">Contact</h1>
+		<b>Address:A/P-Nej Tal:Hatkakangale Dist:Kolhpaur<br>
+		Phone No:7798902681<br>
+		Email ID:komalrchavan1106@gmail.com</b><br>
+		<i class="fa fa-whatsapp" aria-hidden="true" style="font-size:30px;color:red;"></i>
+	</div>
+	
+	</div>
+</div>
+<br>
+
+	<marquee style="color:black;background-color:red;height:30px;"><b>This Is Honda Bike Website @2023</b></marquee>
+</footer>
+
+<!--footer end-->
+
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '15236fc2-f78a-4f33-917d-86c612031090', f: true }); done = true; } }; })();</script>
+</body>
+</html>
+	
+		
+	
+		
+
+
+	
+	
+	
+	
